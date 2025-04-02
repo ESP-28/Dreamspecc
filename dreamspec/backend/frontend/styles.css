@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #fef3c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #4f46e5;
+  }
+  
+  .tagline {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #444;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background-color: #4338ca;
+  }
+  
+  .output-container {
+    text-align: left;
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    max-height: 400px;
+    overflow-y: auto;
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
